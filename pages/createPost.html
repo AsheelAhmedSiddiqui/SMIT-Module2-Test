@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Welcome to DEV community</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="../img/favicon.png" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			media="screen"
+			href="../css/main.css"
+		/>
+	</head>
+	<body>
+		<div class="post-container">
+			<form id="post">
+				<h4>Write Post</h4>
+				<label for="heading">Heading</label>
+				<input type="text" id="heading" required />
+				<label for="heading">Category</label>
+				<input type="text" id="categoryItem" required />
+				<label for="post-content">Post Content</label>
+				<textarea rows="10" id="post-content"></textarea>
+				<button type="submit">Publish</button>
+			</form>
+		</div>
+
+		<!-- Script -->
+		<script type="module" src="../js/createPost.js"></script>
+		<script type="module" src="../js/firebase.mjs"></script>
+	</body>
+</html>

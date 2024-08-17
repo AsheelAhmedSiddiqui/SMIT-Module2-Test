@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>DEV Community</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			media="screen"
+			href="../css/dashboard.css"
+		/>
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="../img/favicon.png" />
+	</head>
+	<body>
+		<header>
+			<div class="dash-header">
+				<div class="logo">
+					<img src="../img/resized_logo_UQww2soKuUsjaOGNB38o.png" alt="" />
+				</div>
+				<div class="searchbar">
+					<ion-icon name="search-outline"></ion-icon>
+					<input type="text" id="search" placeholder="Search" />
+				</div>
+				<div class="user-createPost">
+					<button id="createPost">Create Post</button>
+					<div class="userIcon">
+						<img id="userImage" />
+					</div>
+					<a href="#" id="signOut">Sign out</a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<div class="posts" id="posts">
+					<div class="postBox">
+						<h4>Asheel Ahmed Siddiqui</h4>
+						<p id="datemonth">Aug 16</p>
+						<h1>The company itself is a very successful company...</h1>
+						<p>
+							It is very important for the customer to pay attention to the
+							customer's needs. They conclude from here that in order to further
+							please him, it is easy to see some of his troubles, and we lead
+							them to pain, and he prevents them from being repulsed as if he
+							were fleeing! Which. If the customer is very smart, he or she will
+							be able to achieve the desired result. Wisely, he wants to do it.
+							No one hates to be repulsed by desire, blinded by some, chosen by
+							the times, he receives less forgiveness, and it happens that he
+							criticizes his troubles, by rejecting the distinction he flees!
+						</p>
+						<button>Delete</button>
+					</div>
+				</div>
+				<div class="postCategory">
+					<div>
+						<input type="checkbox" id="IT" />
+						<label for="IT">IT</label>
+					</div>
+					<div>
+						<input type="checkbox" id="IT" />
+						<label for="IT">Technology</label>
+					</div>
+					<div>
+						<input type="checkbox" id="IT" />
+						<label for="IT">Science</label>
+					</div>
+					<div>
+						<input type="checkbox" id="IT" />
+						<label for="IT">Artificial Intelligence</label>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>Copyright &copy; <span id="year"></span> by Asheel Ahmed Siddiqui</p>
+		</footer>
+		<!-- Script -->
+		<script type="module" src="../js/dashboard.js"></script>
+		<script type="module" src="../js/firebase.mjs"></script>
+
+		<!-- ion-icon CDN -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+	</body>
+</html>
