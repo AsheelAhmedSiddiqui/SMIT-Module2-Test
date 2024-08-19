@@ -10,6 +10,7 @@ import {
 let logOut = document.getElementById("signOut");
 let myPosts = document.getElementById("posts");
 let footerYear = document.getElementById("year");
+let currUserImage = document.getElementById("userImage");
 let today = new Date();
 footerYear.innerText = today.getFullYear();
 
@@ -38,7 +39,7 @@ onAuthStateChanged(auth, async (user) => {
 
 			if (post.authorEmail === user.email) {
 				console.log(post, user);
-
+				currUserImage.src = post.authorImage;
 				myPosts.innerHTML += `
 					<div class="postBox">
 						<div class="userDetails">
