@@ -39,8 +39,8 @@ onAuthStateChanged(auth, async (user) => {
 		// https://firebase.google.com/docs/reference/js/auth.user
 		const uid = user.uid;
 		userCon.innerHTML += `
-			<a href="../pages/createPost.html">Create Post</a>
-			<a href="../pages/mypost.html">My Post</a>
+			<a href="./pages/createPost.html">Create Post</a>
+			<a href="./pages/mypost.html">My Post</a>
 					
 		`;
 

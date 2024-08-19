@@ -19,7 +19,7 @@ logOut.addEventListener("click", () => {
 		.then(() => {
 			// Sign-out successful.
 			alert("You are logout");
-			window.location.href = "../index.html";
+			window.location.href = "./index.html";
 		})
 		.catch((error) => {
 			// An error happened.

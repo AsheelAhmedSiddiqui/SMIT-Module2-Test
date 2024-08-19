@@ -51,7 +51,7 @@ postForm.addEventListener("submit", async (e) => {
 						// });
 						e.target[3].disabled = false;
 						e.target[3].innerText = "Publish";
-						window.location.href = "../index.html";
+						window.location.href = "./index.html";
 					}
 				});
 
@@ -76,18 +76,18 @@ postForm.addEventListener("submit", async (e) => {
 	});
 });
 
-onAuthStateChanged(auth, async (user) => {
-	if (user) {
-		// User is signed in, see docs for a list of available properties
-		// https://firebase.google.com/docs/reference/js/auth.user
-		const uid = user.uid;
+// onAuthStateChanged(auth, async (user) => {
+// 	if (user) {
+// 		// User is signed in, see docs for a list of available properties
+// 		// https://firebase.google.com/docs/reference/js/auth.user
+// 		const uid = user.uid;
 
-		// ...
-	} else {
-		// User is signed out
-		// ...
-	}
-});
+// 		// ...
+// 	} else {
+// 		// User is signed out
+// 		// ...
+// 	}
+// });
 
 // try {
 // 	const docRef = await addDoc(collection(db, "posts"));

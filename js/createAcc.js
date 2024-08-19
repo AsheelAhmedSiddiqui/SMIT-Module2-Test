@@ -47,7 +47,7 @@ accountFrom.addEventListener("submit", async (e) => {
 								password: createPassword.value,
 							});
 							console.log("Document written with ID: ", docRef.id);
-							window.location.href = "../pages/dashboard.html";
+							window.location.href = "./pages/dashboard.html";
 						} catch (e) {
 							console.error("Error adding document: ", e);
 						}
