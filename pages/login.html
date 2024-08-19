@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Welcome to DEV community</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="../img/favicon.png" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+	</head>
+	<body>
+		<div class="login-container">
+			<div class="login-content">
+				<img
+					src="../img/original_logo_0DliJcfsTcciZen38gX9.png"
+					alt="DEV logo"
+				/>
+				<h1>Join the DEV Community</h1>
+				<p>DEV Community is a community of 1,906,635 amazing developers</p>
+			</div>
+			<form id="login">
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" required />
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password" required />
+				<div class="showPass">
+					<input type="checkbox" id="show" name="show" />
+					<label for="show">Show Password</label>
+				</div>
+				<button type="submit">Log in</button>
+				<p>
+					By signing in, you are agreeing to our privacy policy, terms of use
+					<br />
+					and code of conduct.
+				</p>
+				<hr />
+				<span
+					>New to DEV Community?
+					<a href="pages/createAcc.html">Create account.</a></span
+				>
+			</form>
+		</div>
+
+		<!-- Script -->
+		<script type="module" src="../js/main.js"></script>
+		<script type="module" src="../js/firebase.mjs"></script>
+	</body>
+</html>

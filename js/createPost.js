@@ -10,15 +10,7 @@ let postForm = document.getElementById("post");
 postForm.addEventListener("submit", async (e) => {
 	e.preventDefault();
 	try {
-		const docRef = await addDoc(collection(db, "posts"), {
-			// user: auth.currentUser,
-			// heading: heading.value,
-			// category: category.value,
-			// postContent: postContent.value,
-			// data: `${new Date().getDate()}-${
-			// 	new Date().getMonth() + 1
-			// }-${new Date().getFullYear()}`,
-		});
+		const docRef = await addDoc(collection(db, "posts"));
 		console.log("Document written with ID: ", docRef.id);
 		await setDoc(doc(db, "posts", docRef.id), {
 			id: docRef.id,

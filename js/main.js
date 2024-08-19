@@ -25,6 +25,7 @@ loginForm.addEventListener("submit", (e) => {
 			const user = userCredential.user;
 			// ...
 			alert("Successfully login");
+			window.location.href = "../index.html";
 		})
 		.catch((error) => {
 			const errorCode = error.code;
@@ -38,10 +39,10 @@ onAuthStateChanged(auth, (user) => {
 		// User is signed in, see docs for a list of available properties
 		// https://firebase.google.com/docs/reference/js/auth.user
 		const uid = user.uid;
-		window.location.href = "pages/dashboard.html";
 		// ...
 	} else {
 		// User is signed out
+		// window.location.href = "../index.html";
 		// ...
 	}
 });
