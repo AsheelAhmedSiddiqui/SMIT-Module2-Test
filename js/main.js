@@ -25,7 +25,7 @@ loginForm.addEventListener("submit", (e) => {
 			const user = userCredential.user;
 			// ...
 			alert("Successfully login");
-			window.location.href = "./index.html";
+			window.location.href = "index.html";
 		})
 		.catch((error) => {
 			const errorCode = error.code;
