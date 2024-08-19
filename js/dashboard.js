@@ -83,7 +83,7 @@ onAuthStateChanged(auth, async (user) => {
 		// User is signed out
 		// ...
 		userCon.innerHTML += `
-			<a href="../../pages/login.html">login</a>
+			<a href="./pages/login.html">login</a>
 					<div class="userIcon">
 						<img id="userImage" />
 					</div>
