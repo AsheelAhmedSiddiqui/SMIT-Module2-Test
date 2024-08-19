@@ -41,14 +41,13 @@ accountFrom.addEventListener("submit", async (e) => {
 						try {
 							const docRef = await addDoc(collection(db, "users"), {
 								email: createEmail.value,
-								userName: userName.value,
 								name: oriName.value,
 								username: userName.value,
 								image: url,
 								password: createPassword.value,
 							});
 							console.log("Document written with ID: ", docRef.id);
-							window.location.href = "../pages/dashboard.html"
+							window.location.href = "../pages/dashboard.html";
 						} catch (e) {
 							console.error("Error adding document: ", e);
 						}

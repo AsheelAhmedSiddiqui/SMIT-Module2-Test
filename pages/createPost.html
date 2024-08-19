@@ -19,11 +19,29 @@
 			<form id="post">
 				<h4>Write Post</h4>
 				<label for="heading">Heading</label>
-				<input type="text" id="heading" required />
-				<label for="heading">Category</label>
-				<input type="text" id="categoryItem" required />
+				<input
+					type="text"
+					id="heading"
+					placeholder="Enter your post title"
+					required
+				/>
+				<select name="categories" id="categories">
+					Category
+					<option selected disabled>Select your post category</option>
+					<option value="IT">IT</option>
+					<option value="New Technology">New Technology</option>
+					<option value="Science">Science</option>
+					<option value="Social">Social</option>
+					<option value="Programing">Programing</option>
+					<option value="Solution">Solutions</option>
+					<option value="News">News</option>
+				</select>
 				<label for="post-content">Post Content</label>
-				<textarea rows="10" id="post-content"></textarea>
+				<textarea
+					rows="10"
+					id="post-content"
+					placeholder="Write your post content..."
+				></textarea>
 				<button type="submit">Publish</button>
 			</form>
 		</div>

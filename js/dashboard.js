@@ -57,8 +57,8 @@ onAuthStateChanged(auth, async (user) => {
 					<div class="userIcon">
 						<img src="${data.image}" id="userImage" />
 					</div>
-				`
-				// console.log(data.image);	
+				`;
+				// console.log(data.image);
 			}
 		});
 
@@ -67,18 +67,20 @@ onAuthStateChanged(auth, async (user) => {
 			let postData = doc.data();
 			postConatiner.innerHTML += `
 			<div class="postBox">
-						<h4>Asheel Ahmed Siddiqui</h4>
-						<p id="datemonth">${postData.data}</p>
+						<div class="userDetails">
+							<img src="${postData.authorImage}" >
+							<div class="userDate">
+								<h4>${postData.authorName}</h4>
+								<p id="datemonth">${postData.data}</p>
+							</div>
+						</div>
 						<h1>${postData.heading}</h1>
-						<p>
-							${postData.postContent}
-						</p>
+						<p>${postData.postContent}</p>
 					</div>
 			`;
 		});
 
 		console.log(user);
-		
 
 		// ...
 	} else {
@@ -95,13 +97,16 @@ onAuthStateChanged(auth, async (user) => {
 		postData.forEach((doc) => {
 			let postData = doc.data();
 			postConatiner.innerHTML += `
-			<div class="postBox">
-						<h4>Asheel Ahmed Siddiqui</h4>
-						<p id="datemonth">${postData.data}</p>
+					<div class="postBox">
+						<div class="userDetails">
+							<img src="${postData.authorImage}" >
+							<div class="userDate">
+								<h4>${postData.authorName}</h4>
+								<p id="datemonth">${postData.data}</p>
+							</div>
+						</div>
 						<h1>${postData.heading}</h1>
-						<p>
-							${postData.postContent}
-						</p>
+						<p>${postData.postContent}</p>
 					</div>
 			`;
 		});

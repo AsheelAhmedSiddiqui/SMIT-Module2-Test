@@ -163,6 +163,19 @@ header {
 	gap: 8px;
 }
 
+.postBox .userDetails {
+	width: 400px;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	margin-bottom: 40px;
+}
+
+.postBox .userDetails img {
+	width: 100px;
+	height: 100px;
+}
+
 /* Footer Styling */
 
 footer {
